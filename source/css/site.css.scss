@@ -8,3 +8,83 @@
 *= require "_layout/grid"
 
 */
+
+body {
+	font-size: 62.5%;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+.main-header {
+	background: black;
+	height: 30px;
+}
+
+.main-header__inner {
+	h1 {
+		margin: 0;
+		line-height: 30px;
+		float: left;
+		color: white;
+		text-transform: uppercase;
+	}
+	.external {
+		float: right;
+		color: #333;
+		line-height: 30px;
+		font-size: 1.4em;
+	}
+}
+
+.main {
+	border-bottom: 5px solid black;
+}
+
+.main-footer {
+	ol {
+		padding-left: 25px;
+		li {
+			margin: 10px 0;
+			font-size: 1.4em;
+			a {
+				color: #666666;
+			}
+		}
+	}
+}
+
+.item-img {
+	border-bottom: 5px solid black;
+}
+
+.item-copy {
+	h4 {
+		margin: 0;
+		padding-top: 10px;
+		color: #444;
+		font-size: 2.4em;
+		text-transform: uppercase;
+	}
+	h5 {
+		margin: 0;
+		color: #444;
+		font-size: 1.6em;
+	}
+	p {
+		color: #666;
+		font-size: 1.8em;
+		line-height: 1.5;
+		font-family: 'Times New Roman', 'serif';
+	}
+}
+
+.item-img {
+	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+	img {
+		display: block;
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+}

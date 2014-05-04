@@ -1,0 +1,11 @@
+.mod.item-img
+	%img{:src => "/images/#{items.image_file_name}" }
+
+.mod.item-copy
+	.mod__inner.item-copy__inner
+		%h4 
+			= items.header
+		%h5 
+			= items.dim
+		%p
+			= items.desc

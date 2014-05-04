@@ -1,3 +1,5 @@
+activate :directory_indexes
+
 #Markdown
 #set :markdown_engine, :redcarpet
 
@@ -40,7 +42,7 @@
 # end
 
 data.dumpster.items.each do |item|
-  proxy "/#{item[0]}/index.html", "index.html", :locals => { :items => item[1] }
+  proxy "/#{item[0]}/index.html", "item.html", :locals => { :items => item[1] }
 end
 
 ###

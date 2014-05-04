@@ -1,20 +1,18 @@
 @import "susy";
 
-$total-columns  : 7;
+$total-columns  : 12;
 $column-width   : 4em;
-$gutter-width   : 1em;
+$gutter-width   : 2em;
 $grid-padding   : $gutter-width;
+$base-font-size: 10px;
 
-$break          : 12;
 
-
-.main {
-  @include container($total-columns, $break);
-  //@include susy-grid-background;
+.mod {
+	width: 100%;
+	position: relative;
 }
 
-@include at-breakpoint($break) {
-  .main {
-    //@include susy-grid-background;
-  }
+.mod__inner {
+	@include container;
+	@include susy-grid-background;
 }
