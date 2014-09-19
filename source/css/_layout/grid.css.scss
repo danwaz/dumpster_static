@@ -14,5 +14,6 @@ $base-font-size: 10px;
 
 .mod__inner {
 	@include container;
-	@include susy-grid-background;
+	//@include susy-grid-background;
+	position: relative;
 }

@@ -1,5 +1,7 @@
 .mod.item-img
-	%img{:src => "/images/#{items.image_file_name}" }
+	.mod__inner
+		%a.back-btn{:href => '/search' }
+	%img{:src => "/img/#{items.image_file_name}" }
 
 .mod.item-copy
 	.mod__inner.item-copy__inner

@@ -28,11 +28,20 @@ body {
 		color: white;
 		text-transform: uppercase;
 	}
+	.main-title {
+		background: image-url('assets/dumpster-logo-sm.png') no-repeat;
+		width: image-width('assets/dumpster-logo-sm.png')/2;
+		height: image-height('assets/dumpster-logo-sm.png')/2;
+		background-size: 100%;
+		text-indent: -9999px;
+		margin-top: 8px;
+	}
 	.external {
 		float: right;
-		color: #333;
+		color: #666;
 		line-height: 30px;
-		font-size: 1.4em;
+		font-size: 1.2em;
+		font-weight: 600;
 	}
 }
 
@@ -40,11 +49,55 @@ body {
 	border-bottom: 5px solid black;
 }
 
+.main__inner {
+	padding-bottom: 120px;
+}
+
+.main-logo {
+	background: image-url('assets/dumpster-logo-lg.png') no-repeat;
+	width: image-width('assets/dumpster-logo-lg.png')/2;
+	height: image-height('assets/dumpster-logo-lg.png')/2;
+	background-size: 100%;
+	text-indent: -9999px;
+	margin: 20px auto;
+}
+
+.search-btn {
+	background: image-url('assets/search-btn.png') no-repeat;
+	width: image-width('assets/search-btn.png')/2;
+	height: image-height('assets/search-btn.png')/2;
+	background-size: 100%;
+	text-indent: -9999px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	left: 84px;
+}
+
+.frank-logo {
+	background: image-url('assets/frank_logo_half.png') no-repeat;
+	width: image-width('assets/frank_logo_half.png');
+	height: image-height('assets/frank_logo_half.png');
+	text-indent: -9999px;
+	display: block;
+	margin: 30px auto;
+}
+
+.homepage-bg {
+	width: 320px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: -1;
+	margin-left: -160px;
+}
+
 .main-footer {
 	ol {
 		padding-left: 25px;
 		li {
-			margin: 10px 0;
+			margin: 16px 0;
 			font-size: 1.4em;
 			a {
 				color: #666666;
@@ -53,21 +106,88 @@ body {
 	}
 }
 
+/* Search Page */
+/***************/
+.search {
+
+}
+
+.search__inner {
+	padding-bottom: 160px;
+}
+
+.tap-to {
+	background: image-url('assets/enter-pin.png') no-repeat;
+	width: image-width('assets/enter-pin.png')/2;
+	height: image-height('assets/enter-pin.png')/2;
+	background-size: 100%;
+	text-indent: -9999px;
+	margin: 24px auto 0;
+	position: relative;
+	left: -60px;
+}
+
+.idNum {
+	-webkit-appearance: none !important;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid #959595;
+	width: 278px;
+	display: block;
+	margin: 0 auto;
+	font-size: 168px;
+	font-weight: 700;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	height: 180px;
+	margin-top: -25px;
+	padding: 0;
+}
+
+.enter-btn {
+	text-indent: -9999px;
+	-webkit-appearance: none !important;
+	border-radius: 0;
+	background: image-url('assets/enter-btn.png') no-repeat;
+	width: image-width('assets/enter-btn.png')/2;
+	height: image-height('assets/enter-btn.png')/2;
+	background-size: 100%;
+	display: block;
+	border: 0;
+	margin: 15px auto;
+	position: relative;
+	left: 103px;
+}
+
+.search-bg {
+	width: 320px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	z-index: -1;
+	margin-left: -160px;
+}
+
+
+/* Item Page */
+/*************/
 .item-img {
 	border-bottom: 5px solid black;
 }
 
 .item-copy {
+	padding-bottom: 30px;
 	h4 {
 		margin: 0;
-		padding-top: 10px;
-		color: #444;
+		padding-top: 20px;
+		color: #000;
 		font-size: 2.4em;
 		text-transform: uppercase;
+		line-height: 1;
 	}
 	h5 {
 		margin: 0;
-		color: #444;
+		color: #000;
 		font-size: 1.6em;
 	}
 	p {
@@ -87,4 +207,16 @@ body {
 		max-width: 700px;
 		margin: 0 auto;
 	}
+}
+
+.back-btn {
+	background: image-url('assets/back-arrow.png') no-repeat #000 center center;
+	width: image-width('assets/back-arrow.png')/2;
+	height: image-height('assets/back-arrow.png')/2;
+	background-size: 50%;
+	position: absolute;
+	top: 0;
+	left: -1px;
+	display: block;
+	padding: 8px 10px;
 }

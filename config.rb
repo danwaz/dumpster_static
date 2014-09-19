@@ -42,7 +42,7 @@ activate :directory_indexes
 # end
 
 data.dumpster.items.each do |item|
-  proxy "/#{item[0]}/index.html", "item.html", :locals => { :items => item[1] }
+  proxy "/items/#{item[0]}/index.html", "items.html", :locals => { :items => item[1] }
 end
 
 ###
