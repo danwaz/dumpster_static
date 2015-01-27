@@ -4,10 +4,15 @@
 *= require "_vendor/normalize.css"
 *= require "_vendor/html5bp.css"
 
-//Grid
-*= require "_layout/grid"
-
 */
+
+@import "susy";
+
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 2em;
+$grid-padding   : $gutter-width;
+$base-font-size: 10px;
 
 body {
 	font-size: 62.5%;
@@ -15,9 +20,23 @@ body {
 	font-weight: 300;
 }
 
+.mod {
+	width: 100%;
+	position: relative;
+}
+
+.mod__inner {
+	@include container;
+	//@include susy-grid-background;
+	position: relative;
+}
+
 .main-header {
-	background: black;
+	background: #231f20;
 	height: 30px;
+	@include at-breakpoint(64em) {
+		height: 70px;
+	}
 }
 
 .main-header__inner {
@@ -27,6 +46,9 @@ body {
 		float: left;
 		color: white;
 		text-transform: uppercase;
+		@include at-breakpoint(64em) {
+			line-height: 70px;
+		}
 	}
 	.main-title {
 		background: image-url('assets/dumpster-logo-sm.png') no-repeat;
@@ -35,6 +57,13 @@ body {
 		background-size: 100%;
 		text-indent: -9999px;
 		margin-top: 8px;
+		@include at-breakpoint(64em) {
+			background: image-url('assets/dumpster-logo-sm-2x.png') no-repeat;
+			width: image-width('assets/dumpster-logo-sm-2x.png')/2;
+			height: image-height('assets/dumpster-logo-sm-2x.png')/2;
+			background-size: 100%;
+			margin-top: 20px;
+		}
 	}
 	.external {
 		float: right;
@@ -42,15 +71,25 @@ body {
 		line-height: 30px;
 		font-size: 1.2em;
 		font-weight: 600;
+		@include at-breakpoint(64em) {
+			line-height: 70px;
+			display: none;
+		}
 	}
 }
 
 .main {
-	border-bottom: 5px solid black;
+	border-bottom: 5px solid #231f20;
+	@include at-breakpoint(64em) {
+		border-bottom: 10px solid #231f20;
+	}
 }
 
 .main__inner {
 	padding-bottom: 120px;
+	@include at-breakpoint(64em) {
+		padding-bottom: 240px;
+	}
 }
 
 .main-logo {
@@ -60,6 +99,13 @@ body {
 	background-size: 100%;
 	text-indent: -9999px;
 	margin: 20px auto;
+	@include at-breakpoint(64em) {
+		background: image-url('assets/dumpster-logo-lg-2x.png') no-repeat;
+		width: image-width('assets/dumpster-logo-lg-2x.png')/2;
+		height: image-height('assets/dumpster-logo-lg-2x.png')/2;
+		background-size: 100%;
+		margin: 40px auto;
+	}
 }
 
 .search-btn {
@@ -72,6 +118,13 @@ body {
 	margin: 0 auto;
 	position: relative;
 	left: 84px;
+	@include at-breakpoint(64em) {
+		background: image-url('assets/search-btn-2x.png') no-repeat;
+		width: image-width('assets/search-btn-2x.png')/2;
+		height: image-height('assets/search-btn-2x.png')/2;
+		background-size: 100%;
+		left: 184px;
+	}
 }
 
 .frank-logo {
@@ -91,14 +144,25 @@ body {
 	left: 50%;
 	z-index: -1;
 	margin-left: -160px;
+	@include at-breakpoint(64em) {
+		width: 640px;
+		margin-left: -320px;
+	}
 }
 
 .main-footer {
 	ol {
 		padding-left: 25px;
+		@include at-breakpoint(64em) {
+			padding-left: 50px;
+		}
 		li {
 			margin: 16px 0;
 			font-size: 1.4em;
+			@include at-breakpoint(64em) {
+				font-size: 2.8em;
+				margin: 32px 0;
+			}
 			a {
 				color: #666666;
 			}
@@ -114,6 +178,9 @@ body {
 
 .search__inner {
 	padding-bottom: 160px;
+	@include at-breakpoint(64em) {
+		padding-bottom: 320px;
+	}
 }
 
 .tap-to {
@@ -125,6 +192,13 @@ body {
 	margin: 24px auto 0;
 	position: relative;
 	left: -60px;
+	@include at-breakpoint(64em) {
+		background: image-url('assets/enter-pin-2x.png') no-repeat;
+		width: image-width('assets/enter-pin-2x.png')/2;
+		height: image-height('assets/enter-pin-2x.png')/2;
+		background-size: 100%;
+		margin: 48px auto 0;
+	}
 }
 
 .idNum {
@@ -141,6 +215,13 @@ body {
 	height: 180px;
 	margin-top: -25px;
 	padding: 0;
+	@include at-breakpoint(64em) {
+		width: 600px;
+		font-size: 336px;
+		height: 360px;
+		margin-top: -50px;
+		border-bottom: 4px solid #bcbec0;
+	}
 }
 
 .enter-btn {
@@ -156,6 +237,14 @@ body {
 	margin: 15px auto;
 	position: relative;
 	left: 103px;
+	@include at-breakpoint(64em) {
+		background: image-url('assets/enter-btn-2x.png') no-repeat;
+		width: image-width('assets/enter-btn-2x.png')/2;
+		height: image-height('assets/enter-btn-2x.png')/2;
+		background-size: 100%;
+		margin: 30px auto;
+		left: 244px;
+	}
 }
 
 .search-bg {
@@ -166,57 +255,81 @@ body {
 	left: 50%;
 	z-index: -1;
 	margin-left: -160px;
+	@include at-breakpoint(64em) {
+		width: 640px;
+		margin-left: -320px;
+	}
 }
 
 
 /* Item Page */
 /*************/
 .item-img {
-	border-bottom: 5px solid black;
+	border-bottom: 5px solid #231f20;
+	@include at-breakpoint(64em) {
+		border-bottom: 10px solid #231f20;
+	}
 }
 
 .item-copy {
 	padding-bottom: 30px;
+	@include at-breakpoint(64em) {
+		padding-bottom: 60px;
+	}
 	h4 {
 		margin: 0;
 		padding-top: 20px;
-		color: #000;
+		color: #231f20;
 		font-size: 2.4em;
 		text-transform: uppercase;
 		line-height: 1;
+		@include at-breakpoint(64em) {
+			padding-top: 20px;
+			font-size: 4.8em;
+		}
 	}
 	h5 {
 		margin: 0;
-		color: #000;
+		color: #231f20;
 		font-size: 1.6em;
+		@include at-breakpoint(64em) {
+			font-size: 3.2em;
+		}
 	}
 	p {
 		color: #666;
 		font-size: 1.8em;
 		line-height: 1.5;
 		font-family: 'Times New Roman', 'serif';
+		@include at-breakpoint(64em) {
+			font-size: 2.8em;
+		}
 	}
 }
 
 .item-img {
-	border-left: 1px solid #e3e3e3;
-	border-right: 1px solid #e3e3e3;
 	img {
 		display: block;
 		width: 100%;
-		max-width: 700px;
 		margin: 0 auto;
 	}
 }
 
 .back-btn {
-	background: image-url('assets/back-arrow.png') no-repeat #000 center center;
+	background: image-url('assets/back-arrow.png') no-repeat center center;
 	width: image-width('assets/back-arrow.png')/2;
 	height: image-height('assets/back-arrow.png')/2;
-	background-size: 50%;
+	background-size: 100%;
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: -1px;
 	display: block;
-	padding: 8px 10px;
+	@include at-breakpoint(64em) {
+		background: image-url('assets/back-arrow-2x.png') no-repeat center center;
+		width: image-width('assets/back-arrow-2x.png')/2;
+		height: image-height('assets/back-arrow-2x.png')/2;
+		background-size: 100%;
+			top: -2px;
+			left: -2px;
+	}
 }
