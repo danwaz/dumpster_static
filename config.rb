@@ -41,8 +41,8 @@ activate :directory_indexes
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
-data.dumpster.items.each do |item|
-  proxy "/items/#{item[0]}/index.html", "items.html", :locals => { :items => item[1] }
+data.dumpster2015.items.each do |item|
+  proxy "/items/#{item.id}/index.html", "items.html", :locals => { :items => item }
 end
 
 ###
