@@ -2086,13 +2086,6 @@ items:
     image_file_name: "298- hook.jpg"
     image_ipad_file_name: "ipad/298- hook_ipad.jpg"
   - 
-    desc: "not in dumpster"
-    dim: "--"
-    header: "HIS DOG POEM"
-    id: 299
-    image_file_name: "299- hisdogpoem.jpg"
-    image_ipad_file_name: "ipad/299- hisdogpoem_ipad.jpg"
-  - 
     desc: "This plastic box had a few of my grandfather's effects in it: his Knights of Columbus tie pin, a pocket knife, a watch with no band. While the contents were fascinating, a small taxonomy of the things with no specific place to be put, the box is universally ugly. I mean, man, what decor does that mesh with?"
     dim: "9 cm x 9 cm x 4.2 cm"
     header: "GOMPY'S UGLY BOX"
@@ -2232,13 +2225,6 @@ items:
     id: 319
     image_file_name: "319- chinesegameinstructions.jpg"
     image_ipad_file_name: "ipad/319- chinesegameinstructions_ipad.jpg"
-  - 
-    desc: "not in dumpster"
-    dim: "12.6 cm x 13.8 cm x 10.3 cm"
-    header: "CAMERA BOX WITH \\\"R\""
-    id: 320
-    image_file_name: "320- cameraboxwithr.jpg"
-    image_ipad_file_name: "ipad/320- cameraboxwithr_ipad.jpg"
   - 
     desc: "I bought these as stocking stuffers in like 1999. In our family, you buy stocking stuffers for everyone's stocking, even your own. Ok, so in like 1999 I used everyone else's stocking as an excuse to buy myself this cute and useless and beautifully over-designed Chinese toy."
     dim: "12.7 cm x 8.5 cm x 2.4 cm"
@@ -2534,13 +2520,6 @@ items:
     image_file_name: "362- BLACK WALLETS.jpg"
     image_ipad_file_name: "ipad/362- BLACK WALLETS_ipad.jpg"
   - 
-    desc: "not in dumpster"
-    dim: "9 cm x 30 cm x 4 cm"
-    header: "ARTIST'S MANNEQUIN"
-    id: 363
-    image_file_name: "363- ARTISTS MANNEQUIN.jpg"
-    image_ipad_file_name: "ipad/363- ARTISTS MANNEQUIN_ipad.jpg"
-  - 
     desc: "My grandparents went to the Indy 500 one year, an event at which they procured a cushion. "
     dim: "37 cm x 37 cm x 4 cm"
     header: "500 MILE RACE CUSHION"
@@ -2603,13 +2582,6 @@ items:
     id: 372
     image_file_name: "372- redskins patch.jpg"
     image_ipad_file_name: "ipad/372- redskins patch_ipad.jpg"
-  - 
-    desc: "not in dumpster"
-    dim: "6.8 cm x 17.8 cm x .5 cm"
-    header: "RED HAND OF MEXICO"
-    id: 373
-    image_file_name: "373- red hand of mexico.jpg"
-    image_ipad_file_name: "ipad/373- red hand of mexico_ipad.jpg"
   - 
     desc: "OK so I remember holding onto this thing, this little plastic dresser, because I knew, I mean I just KNEW it would remind me of that particularly significant moment I shared with Anna Pena. That I know. But I don't remember exactly where I found it. Or why it would be indicative of that moment with Anna. Or, um, actually what that moment was. "
     dim: "6.0 cm diameter"
@@ -2743,13 +2715,6 @@ items:
     id: 392
     image_file_name: "392- baseball yamaka.jpg"
     image_ipad_file_name: "ipad/392- baseball yamaka_ipad.jpg"
-  - 
-    desc: "not in dumpster"
-    dim: "5.6 cm x 5.0 cm x 4.4 cm"
-    header: "BALLERINA CLOCK PART"
-    id: 393
-    image_file_name: "393- ballerina clock part.jpg"
-    image_ipad_file_name: "ipad/393- ballerina clock part_ipad.jpg"
   - 
     desc: "We were celebrating Chinese New Year with Christina about a decade ago, a tradition we practiced for a while before children and migrations. We'd gather as many folks as we could and go to Joe's Shanghai for soup dumplings, rude waiters and large circular tables where you were invariably seated with folks you'd never met before. One year we were sat at table A."
     dim: "7.7 cm x 9.7 cm x 5.5 cm"
@@ -3184,10 +3149,3 @@ items:
     id: 455
     image_file_name: "457- allah.jpg"
     image_ipad_file_name: "ipad/457- allah_ipad.jpg"
-  - 
-    desc: "not in dumpster"
-    dim: "5 cm x 4.8 cm x 2.3 cm"
-    header: "JONNY EEYATE"
-    id: 456
-    image_file_name: "458- jonny eeyate.jpg"
-    image_ipad_file_name: "ipad/458- jonny eeyate_ipad.jpg"

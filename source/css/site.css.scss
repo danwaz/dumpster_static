@@ -6,7 +6,7 @@
 
 */
 
-@import "susy";
+@import "susyone";
 
 $total-columns  : 12;
 $column-width   : 4em;
@@ -71,9 +71,9 @@ body {
 		line-height: 30px;
 		font-size: 1.2em;
 		font-weight: 600;
+		display: none;
 		@include at-breakpoint(64em) {
 			line-height: 70px;
-			display: none;
 		}
 	}
 }
