@@ -3,7 +3,11 @@ $(function(){
 		submit : function (e) {
 			e.preventDefault();
 			var dest = $('.idNum').val();
-			window.location.href = '/items/' + dest
+      console.log(dest.length);
+      if(dest.length > 0) {
+        window.location.href = '/items/' + dest;
+      }
+
 		}
 	});
 });

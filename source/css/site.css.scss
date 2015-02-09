@@ -211,10 +211,12 @@ body {
 	margin: 0 auto;
 	font-size: 168px;
 	font-weight: 700;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family:'Trade Gothic W01';
+	font-weight: 700;
 	height: 180px;
 	margin-top: -25px;
 	padding: 0;
+	letter-spacing: -5px;
 	@include at-breakpoint(64em) {
 		width: 600px;
 		font-size: 336px;
@@ -283,6 +285,8 @@ body {
 		font-size: 2.4em;
 		text-transform: uppercase;
 		line-height: 1;
+		font-family:'Trade Gothic W01';
+		font-weight: 700;
 		@include at-breakpoint(64em) {
 			padding-top: 20px;
 			font-size: 4.8em;
@@ -292,6 +296,8 @@ body {
 		margin: 0;
 		color: #231f20;
 		font-size: 1.6em;
+		font-family:'Trade Gothic W01';
+		font-weight: 700;
 		@include at-breakpoint(64em) {
 			font-size: 3.2em;
 		}
