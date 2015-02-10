@@ -17,6 +17,7 @@
 		-#Update favicon_base.png in /source and middleman-favicon-maker will generate all the versions you need on 'middleman build'
 		-#OR, place favicon.ico and apple-touch-icon.png in /source and deactivate :favicon_maker in config.rb
 		%script{:src => "http://fast.fonts.net/jsapi/87ca440c-56d1-453d-a711-d5b64450c637.js", :type => "text/javascript"}
+		%link{:href => "//cdn-images.mailchimp.com/embedcode/classic-081711.css", :rel => "stylesheet", :type => "text/css"}
 		= stylesheet_link_tag "site"
 	%body
 		/[if lt IE 9] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
@@ -24,9 +25,11 @@
 			.mod__inner.main-header__inner
 				%a{:href => '/'} 
 					%h1.main-title The Dumpster Project
-				%a.external{:href => 'http://thedumpsterproject.com'} Visit Full Site
+				%a.external{:class => 'js-mailchimp'} Sign Up
 		= yield
-		
+		#js-signup-modal
+			= partial "partials/signup"
+		#js-overlay
 
 		= javascript_include_tag "vendor/jquery-2.1.1.min.js"
 		= javascript_include_tag "site"

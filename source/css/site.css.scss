@@ -7,6 +7,7 @@
 */
 
 @import "susyone";
+@import "compass";
 
 $total-columns  : 12;
 $column-width   : 4em;
@@ -71,9 +72,10 @@ body {
 		line-height: 30px;
 		font-size: 1.2em;
 		font-weight: 600;
-		display: none;
+		cursor: pointer;
 		@include at-breakpoint(64em) {
 			line-height: 70px;
+			font-size: 16px;
 		}
 	}
 }
@@ -337,5 +339,97 @@ body {
 		background-size: 100%;
 			top: -2px;
 			left: -2px;
+	}
+}
+
+/* Mailchimp */
+#mc_embed_signup{background:#fff; clear:left; }
+
+.sign-up-header {
+	background: #231f20;
+	padding: 15px 20px;
+}
+
+#mc_embed_signup h2 {
+	font-size: 18px;
+	margin: 0;
+	background: #231f20;
+	color: white;
+	font-family:'Trade Gothic W01';
+	float: left;
+}
+
+.js-close {
+	font-size: 18px;
+	margin: 0;
+	color: white;
+	font-family:'Trade Gothic W01';
+	float: right;
+	cursor: pointer;
+}
+
+#mc_embed_signup form {
+	padding: 0px 20px 20px;
+}
+
+#mc_embed_signup .mc-field-group {
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+#mc_embed_signup .indicates-required {
+	padding-top: 10px;
+	margin-right: 0px;
+}
+
+#mc_embed_signup .mc-field-group label {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#mc_embed_signup .mc-field-group input {
+	font-size: 14px;
+}
+
+#mc_embed_signup .button {
+	background: #231f20;
+	font-family:'Trade Gothic W01';
+	font-weight: bold;
+	border-radius: 0;
+	font-size: 16px;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 5px;
+}
+
+/* Overlay */
+#js-overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.75);
+	display: none;
+}
+
+#js-signup-modal {
+	position: absolute;
+	z-index: 2;
+	top: -400px;
+	left: 0;
+	width: 100%;
+	max-width: 500px;
+	background: white;
+	@include transition(top .5s ease);
+}
+
+.modal-open {
+	#js-overlay {
+		display: block;
+	}
+	#js-signup-modal {
+		top: 0;
 	}
 }
