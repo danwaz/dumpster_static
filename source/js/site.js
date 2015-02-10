@@ -12,23 +12,18 @@ $(function(){
 		}
 	});
 
-	$('.idNum').on({
-		focus : function() {
-			$(this).attr('placeholder', '');
-		},
-		blur : function() {
-			if($(this).val() === '') {
-				$(this).attr('placeholder', '321');
-			}
-		}
-	})
-
 	$('.js-mailchimp, .js-close').on({
 		click : function(e) {
 			e.preventDefault();
 			closeModal();
 		}
 	});
+
+	$('.tap-to').on({
+		click : function() {
+			$('.idNum').focus();
+		}
+	})
 
 	$('#js-overlay').on({
 		click : function() {
